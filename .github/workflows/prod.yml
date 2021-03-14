@@ -73,6 +73,8 @@ jobs:
           echo VERSION=$VERSION
 
           docker tag $IMAGE_NAME $IMAGE_ID:$VERSION
+          docker push $IMAGE_ID:$VERSION
+          
   build:
     runs-on: ubuntu-latest
     steps:
@@ -83,4 +85,4 @@ jobs:
           heroku_app_name: "ml-explorer" #Must be unique in Heroku
           heroku_email: "nikhil.tyagi62@gmail.com"
           usedocker: true
-          docker push $IMAGE_ID:$VERSION
+          
