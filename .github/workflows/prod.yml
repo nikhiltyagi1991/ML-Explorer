@@ -85,4 +85,5 @@ jobs:
           heroku_app_name: "ml-explorer" #Must be unique in Heroku
           heroku_email: "nikhil.tyagi62@gmail.com"
           usedocker: true
+          env_file: "envs/prod.env"
           
