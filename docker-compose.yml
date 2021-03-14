@@ -4,9 +4,9 @@ services:
   web:
     build: .
     ports:
-      - "80:8080"
+      - "5000:5000"
     volumes:
       - .:/code
     env_file:
-      - ./envs/prod.env
+      - ./envs/dev.env
 
